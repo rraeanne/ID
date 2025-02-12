@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noir Soleil Perfumes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Noir Soleil Perfumes</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shop">
+            <h2>Fragrance Collection</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="replica1_lazysundaymorning.webp" alt="Perfume 1">
+                    <h3>Noir Soleil - Lazy Sunday Morning Eau de Toilette </h3>
+                    <p>$80.00</p>
+                    <button onclick="addToCart('Midnight Essence', 80)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="photos/images/perfume2.jpg" alt="Perfume 2">
+                    <h3>Noir Soleil - Golden Hour</h3>
+                    <p>$90.00</p>
+                    <button onclick="addToCart('Golden Hour', 90)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Noir Soleil. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

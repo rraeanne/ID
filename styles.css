@@ -1,0 +1,60 @@
+/* Merchandise Section */
+#fragrance {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#fragrance h2 {
+    font-family: Arial, Helvetica;    
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Display 4 items per row */
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.product {
+    border: 1px solid white;
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* Adjust height for uniformity */
+    object-fit: contain; /* Keeps images proportional */
+}
+
+.product h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Align the button below the product image */
+}
+
+button:hover {
+    background-color: skyblue;
+}
