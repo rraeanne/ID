@@ -172,46 +172,94 @@ body {
 .fragrances {
     padding: 50px 20px;
     text-align: center;
-    background-color: #000;
+    background-color: #f7f1e9;
     margin-top: 0;
     position: relative;
 }
 
+/* Heading for Fragrance Section */
 .fragrances h2 {
-    color: #D4AF37;
+    color: #120e01;
     font-size: 36px;
     margin-bottom: 40px;
 }
 
+/* Grid Layout for Fragrance Items */
 .fragrance-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.fragrance-item {
-    width: 30%;
-    margin-bottom: 20px;
-    background-color: #1A1A1A;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(212, 175, 55, 0.2);
-}
-
-.fragrance-item img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between items */
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    max-width: 1200px; /* Ensure it doesn't stretch too wide */
+    margin: 0 auto; /* Center the grid */
+    padding: 0 20px;
 }
 
+/* Fragrance Item */
+.fragrance-item {
+    background-color: #efe6dd;
+    padding: 20px;
+    border-radius: 8px; /* Slightly smaller radius for a cleaner look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Lighter shadow for a more subtle effect */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Ensures padding and borders are included in the width and height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%; /* Ensure item doesn't overflow */
+    margin: 0 auto; /* Center items */
+}
+
+/* Fragrance Item Hover Effect */
+.fragrance-item:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Image Styling */
+.fragrance-item img {
+    width: 100%; /* Ensures image fills the container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect on Image */
+.fragrance-item:hover img {
+    transform: scale(1.05); /* Zoom effect on image hover */
+}
+
+/* Fragrance Item Title */
 .fragrance-item h3 {
-    color: #D4AF37;
+    color: #120e01;
     font-size: 24px;
     margin: 10px 0;
 }
 
+/* Fragrance Item Description */
 .fragrance-item p {
-    color: #fff;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .fragrance-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .fragrance-grid {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+
+    .fragrances h2 {
+        font-size: 28px; /* Smaller font size on mobile */
+    }
 }
 
 /* Footer */
