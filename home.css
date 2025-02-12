@@ -273,5 +273,5 @@ footer {
     display: flex;
     justify-content: center; /* Centers the category buttons */
     gap: 20px;
-    padding: 20px;
+    padding: 21px;
 }
