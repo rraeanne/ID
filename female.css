@@ -66,17 +66,11 @@ body {
     color: #c6a86a;
 }
 
-/* Dropdown container */
+/* Dropdown Menu */
 .dropdown {
     position: relative;
 }
 
-/* Dropdown container */
-.dropdown {
-    position: relative;
-}
-
-/* Dropdown menu - Ensure items are stacked vertically */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -91,7 +85,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease, visibility 0.2s ease;
-    flex-direction: column; /* Makes sure items are stacked */
+    flex-direction: column;
 }
 
 /* Show dropdown only on hover */
@@ -101,148 +95,15 @@ body {
     visibility: visible;
 }
 
-
-/* Female Fragrances Section */
+/* Male & Female Fragrances Section */
+.male-fragrances,
 .female-fragrances {
     text-align: center;
-    padding: 50px 20px;
+    padding: 120px 20px 50px; /* Ensures content is not hidden by navbar */
     background-color: #fff;
 }
 
-.female-fragrances h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 40px;
-}
-
-/* Fragrance Grid */
-.fragrance-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* Fragrance Item Styling */
-.fragrance-item {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-.fragrance-item:hover {
-    transform: translateY(-5px);
-}
-
-.fragrance-item img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.fragrance-item h3 {
-    font-size: 1.5em;
-    color: #222;
-    margin-bottom: 10px;
-}
-
-.fragrance-item p {
-    font-size: 1em;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-/* Add to Cart Button */
-.add-to-cart {
-    display: inline-block;
-    background: #222;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.add-to-cart:hover {
-    background: #555;
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .fragrance-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .fragrance-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-
-.menu ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    margin: 0 15px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 8px 10px;
-    transition: 0.3s;
-}
-
-.menu a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
-
-.nav-icons a {
-    margin-left: 20px;
-}
-
-.nav-icons img {
-    width: 24px;
-    height: 24px;
-}
-
-/* Female Fragrances Section */
-.female-fragrances {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
-}
-
+.male-fragrances h2,
 .female-fragrances h2 {
     font-size: 2.5em;
     color: #333;
