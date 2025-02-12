@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noir Soleil</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#"><img src="noir_solei_logo.jpg" alt="Noir Soleil Logo"></a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="fragrance.html">Fragrances</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="female.html">Female</a></li>
+                            <li><a href="male.html">Male</a></li>
+                            <li><a href="unisex.html">Unisex</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="by_noir_solei.html">By Noir Soleil</a></li>
+                    <li><a href="sale.html">Sale</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="cart.html"><img src="shopping-cart.png" alt="Cart"></a>
+                <a href="user.html"><img src="user.png" alt="User"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Page -->
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <button id="checkout-button">Proceed to Checkout</button>
+    </section>
+
+    <script>
+        // Fetch and display cart items
+        async function loadCart() {
+            const response = await fetch('/api/cart');
+            const data = await response.json();
+            const cartItemsContainer = document.getElementById('cart-items');
+
+            if (data.cart.length === 0) {
+                cartItemsContainer.innerHTML = '<p>Your cart is empty!</p>';
+            } else {
+                data.cart.forEach(item => {
+                    const itemElement = document.createElement('div');
+                    itemElement.classList.add('cart-item');
+                    itemElement.innerHTML = `
+                        <p>${item.productName}</p>
+                        <p>Price: $${item.productPrice}</p>
+                        <p>Quantity: ${item.quantity}</p>
+                    `;
+                    cartItemsContainer.appendChild(itemElement);
+                });
+            }
+        }
+
+        loadCart();
+    </script>
+
+</body>
+</html>
