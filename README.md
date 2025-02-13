@@ -8,15 +8,22 @@ Noir Soleil is an innovative perfume brand dedicated to sustainability. We offer
 - 🛍 **E-commerce Platform** – Buy perfumes with a seamless online shopping experience.  
 - 🌱 **Sustainability-Focused** – Discounts through our **Essence Empire** refill program.  
 - 🔬 **Personalized Scent Quiz** – Find your signature fragrance.  
-- 🏆 **Multi-Brand Selection** – Showcasing other eco-conscious perfume brands.  
+- 🏆 **Multi-Brand Selection** – Showcasing other eco-conscious perfume brands thta contribute to sustainability.  
 
 ---
 
 ## 🛠️ Tech Stack  
 - **Frontend:** HTML, CSS, JavaScript (React)  
-- **Backend:** Node.js, Express (if applicable)  
-- **Database:** MongoDB / Firebase (if applicable)  
-- **Other Tools:** Stripe (for payments), APIs for scent recommendations  
+- **Backend:** Node.js, Express  
+- **Database:** Firebase
+- API for log in and cart system
+
+## 🖼️ Screenshots
+screenshots of AI assistance 
+![Firebase1](Firebase1.jpg)
+![Firebase2](Firebase2.jpg)
+![Firebase3](Firebase3.jpg)
+
 
 ---
 
