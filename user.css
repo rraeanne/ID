@@ -1,46 +1,146 @@
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #000;
+    background-color: #f8f3f3;
     color: #FFD700;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-/* User Profile Container */
-.user-container {
+
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: black; /* Make all text black */
+    text-align: center; /* Align all text to the center */
+    padding-top: 80px; /* Ensures content starts below fixed navbar */
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-icons a img {
+    width: 20px;
+    height: auto;
+}
+
+/* Menu */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #c6a86a;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown menu - Ensure items are stacked vertically */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    flex-direction: column; /* Makes sure items are stacked */
+}
+
+/* Show dropdown only on hover */
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Center Login Container */
+.login-container {
     width: 90%;
-    max-width: 500px;
-    margin: 50px auto;
+    max-width: 400px;
+    margin: 100px auto; /* Centers the form */
     padding: 30px;
-    background-color: rgba(255, 215, 0, 0.1);
+    background-color: #534242; /* Dark background */
+    color: #ebe8d2; /* Gold text */
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.2);
+    text-align: center;
 }
 
-/* Profile Picture */
-.profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid #FFD700;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-
-/* User Details */
-.user-info {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-/* Edit Profile Button */
-.edit-btn {
-    margin-top: 15px;
+/* Style Login Form Inputs */
+#login-form input {
     width: 100%;
-    padding: 10px;
-    background-color: #FFD700;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #e7e3d2;
+    border-radius: 5px;
+    background: #f1e7e7;
+    color: #979486;
+}
+
+/* Style Button */
+#login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d6d0ad;
     color: black;
     font-size: 16px;
     border: none;
@@ -49,24 +149,6 @@ body {
     transition: 0.3s;
 }
 
-.edit-btn:hover {
-    background-color: #ffea70;
-}
-
-/* Logout Button */
-.logout-btn {
-    margin-top: 10px;
-    width: 100%;
-    padding: 10px;
-    background-color: red;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.logout-btn:hover {
-    background-color: darkred;
+#login-form button:hover {
+    background-color: #e77954;
 }

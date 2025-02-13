@@ -1,125 +1,96 @@
-/* General Styles */
+* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #111; /* Dark background */
-    color: #fff;
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Cart Container */
-.cart-container {
-    background-color: #222; /* Slightly lighter black */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 0, 0.5); /* Yellow glow effect */
-    width: 80%;
-    max-width: 800px;
-    text-align: center;
-}
-
-/* Cart Title */
-h2 {
-    color: #ffcc00; /* Yellow for branding */
-    margin-bottom: 20px;
-}
-
-/* Cart Items */
-.cart-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-/* Product Image */
-.cart-item img {
-    width: 70px;
-    height: 70px;
-    border-radius: 5px;
-    object-fit: cover;
-    margin-right: 15px;
-}
-
-/* Item Details */
-.item-details {
-    flex: 1;
-    text-align: left;
-}
-
-.item-details h3 {
-    margin: 0;
-    font-size: 18px;
-    color: #ffcc00;
-}
-
-.item-details p {
-    margin: 5px 0;
-    font-size: 14px;
-}
-
-/* Quantity and Remove Button */
-.quantity {
-    display: flex;
-    align-items: center;
-}
-
-.quantity input {
-    width: 40px;
-    text-align: center;
-    background-color: #444;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    margin: 0 5px;
-}
-
-.remove-btn {
-    background-color: #ff4444;
-    color: #fff;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.remove-btn:hover {
-    background-color: #cc0000;
-}
-
-/* Total Price Section */
-.total {
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffcc00;
-}
-
-/* Checkout Button */
-.checkout-btn {
-    display: block;
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
     width: 100%;
-    background-color: #ffcc00;
-    color: #111;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 15px;
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
 }
 
-.checkout-btn:hover {
-    background-color: #e6b800;
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-icons a img {
+    width: 20px;
+    height: auto;
+}
+
+/* Menu */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #c6a86a;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    flex-direction: column;
+}
+
+/* Show dropdown only on hover */
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
 }
