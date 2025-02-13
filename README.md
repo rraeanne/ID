@@ -37,7 +37,7 @@ screenshots of AI assistance
 
 ## CREDITS
 -Replica Website: https://www.maisonmargiela-fragrances.eu/en_GB/fragrances/by-collection/replica/
-- Pintrest: https://www.pinterest.com/ 
+-Pintrest: https://www.pinterest.com/ 
 
 ---
 
