@@ -94,3 +94,111 @@ body {
     opacity: 1;
     visibility: visible;
 }
+
+
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center; /* Centers all text by default */
+}
+
+/* Shopping Cart Container */
+.cart-container {
+    width: 70%; /* Increased width for better spacing */
+    margin: 50px auto;
+    background: rgb(245, 237, 227);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px
+}
+
+/* Cart Item Box */
+.cart-item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center all items */
+    justify-content: center;
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Centered & Enlarged Image */
+.cart-item img {
+    width: 150px; /* Bigger image */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Spacing below image */
+}
+
+/* Center Aligning Text with Bigger Font */
+.item-details {
+    text-align: center;
+}
+
+.item-details h2 {
+    font-size: 24px; /* Bigger title */
+    margin: 10px 0;
+    color: #222;
+}
+
+.item-details p {
+    font-size: 18px; /* Bigger description */
+    color: #555;
+}
+
+/* Remove Button */
+.remove-item {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 15px auto; /* Centers button */
+    transition: 0.3s ease;
+}
+
+.remove-item:hover {
+    background: #cc0000;
+}
+
+/* Empty Cart Message */
+.empty-cart {
+    font-size: 20px;
+    color: #888;
+    display: none;
+}
+
+/* Return to Shopping Button */
+.return-btn {
+    display: block;
+    width: max-content;
+    margin: 30px auto;
+    padding: 12px 20px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.return-btn:hover {
+    background: #444;
+}

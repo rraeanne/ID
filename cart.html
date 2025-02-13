@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Female Fragrances - Noir Solei</title>
+    <title>Shopping Cart - Noir Soleil</title>
     <link rel="stylesheet" href="cart.css">
 </head>
 <body>
 
-     <!-- Navigation Bar -->
-     <header class="navbar">
+    <!-- Navigation Bar -->
+    <header class="navbar">
         <div class="nav-container">
             <div class="logo">
                 <a href="#"><img src="noir_solei_logo.jpg" alt="Noir Soleil Logo"></a>
@@ -17,7 +17,6 @@
             <nav class="menu">
                 <ul>
                     <li><a href="homepage.html">Home</a></li>
-
                     <li class="dropdown">
                         <a href="fragrance.html">Fragrances</a>
                         <ul class="dropdown-menu">
@@ -26,7 +25,7 @@
                             <li><a href="unisex.html">Unisex</a></li>
                         </ul>
                     </li>
-                    <li><a href="by_noir_solei.html">By Noir Solei</a></li>
+                    <li><a href="by_noir_solei.html">By Noir Soleil</a></li>
                     <li><a href="sale.html">Sale</a></li>
                     <li><a href="about_us.html">About Us</a></li>
                 </ul>
@@ -37,3 +36,30 @@
             </div>
         </div>
     </header>
+
+    <!-- Shopping Cart Section -->
+    <main class="cart-container">
+        <h2>Your Shopping Cart</h2>
+
+        <!-- Cart Item Box -->
+        <div class="cart-item">
+            <img src="ns1.jpg" alt="Perfume Bottle">
+            <div class="item-details">
+                <h2>Whispers in the library</h2>
+                <p>Size: 50ml</p>
+                <p>Price: $89.99</p>
+                <button class="remove-item">Remove</button>
+            </div>
+        </div>
+
+        <!-- Empty Cart Message -->
+        <p class="empty-cart" style="display: none;">Your cart is empty.</p>
+
+        <!-- Return to Shopping Button -->
+        <a href="fragrance.html" class="return-btn">← Continue Shopping</a>
+    </main>
+
+</body>
+</html>
+
+
