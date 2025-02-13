@@ -112,14 +112,15 @@ body {
 }
 
 
+
 /* Center Login Container */
 .login-container {
-    width: 90%;
+    width: 100%;
     max-width: 400px;
     margin: 100px auto; /* Centers the form */
-    padding: 30px;
+    padding: 50px;
     background-color: #534242; /* Dark background */
-    color: #ebe8d2; /* Gold text */
+    color: #ebe8d2; 
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.2);
     text-align: center;
@@ -128,12 +129,13 @@ body {
 /* Style Login Form Inputs */
 #login-form input {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     margin: 10px 0;
     border: 1px solid #e7e3d2;
     border-radius: 5px;
     background: #f1e7e7;
     color: #979486;
+    font-size: 16px; /* Ensures consistency */
 }
 
 /* Style Button */
@@ -147,8 +149,34 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    text-transform: uppercase; /* For emphasis */
 }
 
 #login-form button:hover {
     background-color: #e77954;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Added more padding for a better look */
+    border-top: 2px solid #c6a86a; /* Gold border on top for consistency */
+}
+
+footer p {
+    margin: 0; /* Removes extra margin */
+    font-size: 14px;
+}
+
+/* Add subtle hover effect on footer links if you have any */
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #c6a86a; /* Gold color on hover */
 }
