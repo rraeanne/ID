@@ -7,6 +7,7 @@ We wanted to design an aesthetically appealing website that would cater to perfu
 
 **Figma links**
 High fidelity- https://www.figma.com/proto/lvyzJ32qvx2ihTLvCdonaL/High-Fidelity-IP?node-id=0-1&t=yNpAxiiCXQtrdlG6-1
+
 Low fidelity- https://www.figma.com/proto/ABIuNSjotG5JbXxWAyDbP3/Low-fidelity-IP?node-id=0-1&t=TD3K4OYO0CF2Mp1y-1
 
 **Logo Design**
@@ -37,6 +38,7 @@ screenshots of AI assistance
 
 ## CREDITS
 -Replica Website: https://www.maisonmargiela-fragrances.eu/en_GB/fragrances/by-collection/replica/
+
 -Pintrest: https://www.pinterest.com/ 
 
 ---
