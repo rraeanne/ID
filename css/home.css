@@ -2,6 +2,10 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    color: black; /* Make all text black */
+    text-align: center; /* Align all text to the center */
+    padding-top: 80px; /* Ensures content starts below fixed navbar */
+    background-color: #f8f8f8; /* Background color */
 }
 
 /* Navigation Bar */
@@ -71,11 +75,6 @@ body {
     position: relative;
 }
 
-/* Dropdown container */
-.dropdown {
-    position: relative;
-}
-
 /* Dropdown menu - Ensure items are stacked vertically */
 .dropdown-menu {
     display: none;
@@ -99,22 +98,6 @@ body {
     display: flex;
     opacity: 1;
     visibility: visible;
-}
-
-/* Dropdown menu items */
-.dropdown-menu li {
-    display: block;
-    width: 100%;
-}
-
-/* Style for links inside dropdown */
-.dropdown-menu li a {
-    padding: 10px;
-    display: block;
-    color: black;
-    text-decoration: none;
-    transition: background 0.3s ease;
-    text-align: left; /* Align text to the left */
 }
 
 /* Hover effect */

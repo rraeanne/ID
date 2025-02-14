@@ -1,18 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Female Fragrances - Noir Solei</title>
-    <link rel="stylesheet" href="female.css">
+    <link rel="stylesheet" href="../css/female.css">
+    <script src="../js/cart.js"></script>
 </head>
 <body>
 
+   
      <!-- Navigation Bar -->
      <header class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <a href="#"><img src="noir_solei_logo.jpg" alt="Noir Soleil Logo"></a>
+                <a href="#"><img src="../images/noir_solei_logo.jpg" alt="Noir Soleil Logo"></a>
             </div>
             <nav class="menu">
                 <ul>
@@ -32,84 +35,75 @@
                 </ul>
             </nav>
             <div class="nav-icons">
-                <a href="cart.html"><img src="shopping-cart.png" alt="Cart"></a>
-                <a href="user.html"><img src="user.png" alt="User"></a>
+                <a href="cart.html"><img src="../images/shopping-cart.png" alt="Cart"></a>
+                <a href="user.html"><img src="../images/user.png" alt="User"></a>
             </div>
         </div>
     </header>
+
     <!-- Female Fragrances Section -->
     <section class="female-fragrances">
         <div class="container">
             <h2>Our Female Fragrances</h2>
             <div class="fragrance-grid">
-                <div class="fragrance-item">
-                    <img src="female1.webp" alt="Fragrance 1">
+                <div class="fragrance-item" data-name="Brit For Her" data-price="65.00" data-image="female1.webp">
+                    <img src="../images/female1.webp" alt="Fragrance 1">
                     <h3>Brit For Her Perfume by Burberry</h3>
-                    <p class="price">$65.00</p> <!-- Price added -->
-                    <p>A must have staple in every womans collection</p>
-                    <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                    <p class="price">$65.00</p>
+                    <p>A must-have staple in every woman's collection.</p>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
-                <div class="fragrance-item">
-                    <img src="female2.webp" alt="Fragrance 2">
+                <div class="fragrance-item" data-name="Romance Perfume" data-price="165.00" data-image="female2.webp">
+                    <img src="../images/female2.webp" alt="Fragrance 2">
                     <h3>Romance Perfume by Ralph Lauren</h3>
-                    <p class="price">$165.00</p> <!-- Price added -->
-                    <p>Warm and Spicy, just like how love feels like.</p>
-                    <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                    <p class="price">$165.00</p>
+                    <p>Warm and spicy, just like love.</p>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
-                <div class="fragrance-item">
-                    <img src="female3.webp" alt="Fragrance 3">
+                <div class="fragrance-item" data-name="Eau so fresh" data-price="230.00" data-image="female3.webp">
+                    <img src="../images/female3.webp" alt="Fragrance 3">
                     <h3>Eau so fresh by Marc Jacobs</h3>
                     <p class="price">$230.00</p> <!-- Price added -->
                     <p>Smell like a floral bath with a hint of apple.</p>
-                    <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
-                <div class="fragrance-item">
-                    <img src="female4.webp" alt="Fragrance 4">
+                <div class="fragrance-item" data-name="Jardin Secret" data-price="105.00" data-image="female4.webp">
+                    <img src="../images/female4.webp" alt="Fragrance 4">
                     <h3>Jardin Secret by Mercedes-Benz</h3>
                     <p class="price">$105.00</p> <!-- Price added -->
                     <p>A feminine scent with a touch of glitter.</p>
-                    <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
-                <div class="fragrance-item">
-                    <img src="female5.webp" alt="Fragrance 5">
+                <div class="fragrance-item" data-name="Soleil d'Or" data-price="190.00" data-image="female5.webp">
+                    <img src="../images/female5.webp" alt="Fragrance 5">
                     <h3>Soleil d'Or by Gucci</h3>
                     <p class="price">$190.00</p> <!-- Price added -->
                     <p>A bright and sunny citrus-infused scent.</p>
-                    <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
-                <div class="fragrance-item">
-                    <img src="female 6.webp" alt="Fragrance 6">
+                <div class="fragrance-item" data-name="Yellow Diamond Perfume" data-price="100.00" data-image="female6.webp">
+                    <img src="../images/female 6.webp" alt="Fragrance 6">
                     <h3>Yellow Diamond Perfume by Versace</h3>
                     <p class="price">$100.00</p> <!-- Price added -->
                     <p>A sensual blend of dark berries and vanilla.</p>
-                    <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
-                <div class="fragrance-item">
-                    <img src="female 7.webp" alt="Fragrance 7">
+                <div class="fragrance-item" data-name="Bloom Perfume" data-price="95.00" data-image="female7.webp">
+                    <img src="../images/female 7.webp" alt="Fragrance 7">
                     <h3>Bloom Perfume by Gucci</h3>
                     <p class="price">$95.00</p> <!-- Price added -->
                     <p>A dreamy scent with lavender and creamy sandalwood.</p>
-                    <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
-                <div class="fragrance-item">
-                    <img src="female8.webp" alt="Fragrance 8">
+                <div class="fragrance-item" data-name="Chérie d'Amour" data-price="125.00" data-image="female8.webp">
+                    <img src="../images/female8.webp" alt="Fragrance 8">
                     <h3>Chérie d'Amour by Yves Saint Laurent</h3>
-                    <p class="price">$.00</p> <!-- Price added -->
+                    <p class="price">$125.00</p> <!-- Price added -->
                     <p>A romantic perfume with sweet peach and peony.</p>
-                    <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
-                
-               
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Noir Solei. All rights reserved.</p>
-    </footer>
-
-    
-
 </body>
 </html>
